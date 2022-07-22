@@ -1,7 +1,10 @@
 import React from 'react'
 import profile from './assets/foto12.jpg'
+import background from './assets/wallpaper.webp'
 import {FaSpotify,FaWhatsapp,FaSoundcloud} from 'react-icons/fa'
 import { SlideCarroussel } from './Components/slide'
+import freeBeat from './assets/free beat img.jpg'
+import tue from './assets/tue.jpg'
 
 
 
@@ -9,7 +12,9 @@ function App() {
 
   return (
       <>
-        <div className="header"></div>
+        <div className="header">
+          <img src={background} alt='bakgound'/>
+        </div>
         <div className="main-container">
             <div className="header-container">
               <div className="img"><img src={profile} alt="foto de perfil" /></div>
@@ -17,8 +22,8 @@ function App() {
                 <h2>RoberTnoBeat</h2>
                 <span>beatmaker</span>
                 <div className="btns">
-                  <button id='active'><a href="#">Seguir +</a></button>
-                  <button id='youtube'><a href="#">Youtube</a></button>
+                  <button id='active'><a href="https://www.instagram.com/robertnobeat_oficial/">Seguir +</a></button>
+                  <button id='youtube'><a href="https://www.youtube.com/channel/UC-Xnqfp5_pJit2c1A55Fe6A">Youtube</a></button>
                 </div>
               </div>
             </div>
@@ -26,10 +31,16 @@ function App() {
               <h3>features</h3>
               <div className="cards-container">
                 <div className="card">
-                  <label>Beats 100% FREE</label>
+                 <a href="https://soundcloud.com/robertnobeat/sets/beat-tape-2-1">
+                 <img src={freeBeat} alt="image1" />
+                  <span>Beats 100% FREE</span>
+                 </a>
                 </div>
                 <div className="card">
-                <label>Beats 100% FREE V2</label>
+                <a href="https://soundcloud.com/robertnobeat/sets/beat-tape-1-50-de-desconto">
+                <img src={tue} alt="image2" />
+                <span>Beats promocionais</span>
+                </a>
                   </div>
               </div>
             </section>
@@ -45,16 +56,22 @@ function App() {
                 <h3>More</h3>
                 <div className="more-container">
                     <div className="option">
-                      <FaSpotify className='icon'/>
+                     <a href="https://open.spotify.com/artist/2I4b92k4VhozkXpK6FG5L0">
+                     <FaSpotify className='icon'/>
                       <div className="text-container"><p>Spotify</p></div>
+                     </a>
                     </div>
                     <div className="option">
-                      <FaWhatsapp className='icon'/>
+                        <a href="https://wa.me/73999335493">
+                        <FaWhatsapp className='icon'/>
                       <div className="text-container"><p>WhatsApp</p></div>
+                        </a>
                     </div>
                     <div className="option">
-                      <FaSoundcloud className='icon'/>
+                          <a href="https://soundcloud.com/robertnobeat">
+                          <FaSoundcloud className='icon'/>
                       <div className="text-container"><p>SoundCloud</p></div>
+                          </a>
                     </div>
                 </div>
               </section>

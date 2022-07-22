@@ -1,11 +1,23 @@
 .boxSlider{
     width: 300px;
     height: 250px;
-    background-color: gray;
+    background-color: white;
     border-radius: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     margin-bottom: 20px;
+    box-shadow: 1px 10px 10px 1px rgba(0, 0, 0, 0.377);
+    border: 1px solid royalblue;
+    flex-direction: column;
+}
+.boxSlider>.text>h3{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.boxSlider>.text>p{
+    font-size: 1rem;
+    margin: 10px;
+    color: lightslategray;
 }
