@@ -1,0 +1,11 @@
+.boxSlider{
+    width: 300px;
+    height: 250px;
+    background-color: gray;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
